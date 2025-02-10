@@ -1,8 +1,8 @@
 import { useState } from "react"
-import TextMessageBox from "../../components/chat-boxes/TextMessageBox"
-import GptMessage from "../../components/chat-bubblers/GptMessage"
-import MyMessage from "../../components/chat-bubblers/MyMessage"
-import TypingLoader from "../../components/loaders/TypingLoader"
+import GptMessage from "../components/chat-bubblers/GptMessage"
+import MyMessage from "../components/chat-bubblers/MyMessage"
+import TypingLoader from "../components/loaders/TypingLoader"
+import TextMessageBox from "../components/chat-boxes/TextMessageBox"
 
 
 interface Message{
@@ -11,7 +11,7 @@ interface Message{
 }
 
 
-export const OrthographyPage = () => {
+export const ChatTemplate = () => {
   const [isLoading, setIsLoading] = useState(false)
   const [messages, setmessages] = useState<Message[]>([])
 
